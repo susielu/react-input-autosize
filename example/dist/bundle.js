@@ -70,7 +70,7 @@ var AutosizeInput = React.createClass({
 		}
 	},
 	updateInputWidth: function updateInputWidth() {
-		if (!this.isMounted() || typeof this.refs.sizer.scrollWidth === 'undefined') {
+		if (!this.isMounted() || typeof this.refs.sizer === "undefined" || typeof this.refs.sizer.scrollWidth === 'undefined') {
 			return;
 		}
 		var newInputWidth = undefined;
